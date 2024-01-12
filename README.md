@@ -2,7 +2,7 @@
 
 This is a simple website monitor, inspired by [broke.lol](https://broke.lol).
 
-![A screenshot of the website monitor](screen.png)
+![A screenshot of the website monitor](.repo/screen.png)
 
 ## Usage
 
