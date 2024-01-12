@@ -1,1 +1,0 @@
-You can say anything you want about wikipedia.org here.
