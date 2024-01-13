@@ -1,5 +1,9 @@
 <?php
 
+require_once __DIR__ . '/vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load(); 
+
 include('configuration.php');
 include(PATH.'/Parsedown.php');
 
@@ -14,7 +18,9 @@ if(!is_writable(PATH.'/monitors')) die('<h1>Monitors directory is not writable</
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Website Monitor</title>
+<?php
+echo '<title>'.$_ENV['TITLE'].'</title>';
+?>
 <meta charset="utf-8">
 <meta name="theme-color" content="#212529">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +31,9 @@ if(!is_writable(PATH.'/monitors')) die('<h1>Monitors directory is not writable</
 
 <main>
 
-<h1>Website Monitor</h1>
+<?php
+echo '<h1>'.$_ENV['TITLE'].'</h1>';
+?>
 
 <?php
 

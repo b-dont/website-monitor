@@ -1,0 +1,37 @@
+[
+    {
+        "timestamp": 1705096334,
+        "time": 130.469,
+        "response": 200
+    },
+    {
+        "timestamp": 1705098677,
+        "time": 123.145,
+        "response": 200
+    },
+    {
+        "timestamp": 1705098678,
+        "time": 124.094,
+        "response": 200
+    },
+    {
+        "timestamp": 1705098679,
+        "time": 126.171,
+        "response": 200
+    },
+    {
+        "timestamp": 1705098680,
+        "time": 128.12,
+        "response": 200
+    },
+    {
+        "timestamp": 1705098681,
+        "time": 121.243,
+        "response": 200
+    },
+    {
+        "timestamp": 1705099948,
+        "time": 128.164,
+        "response": 200
+    }
+]
