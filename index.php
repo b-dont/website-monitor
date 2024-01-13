@@ -1,9 +1,5 @@
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load(); 
-
 include('configuration.php');
 include(PATH.'/Parsedown.php');
 
@@ -183,7 +179,7 @@ EOD;
 
 <footer>
 
-<p>Website Monitor is an open source project inspired by <a href="https://broke.lol">broke.lol</a>. <a href="https://github.com/neatnik/website-monitor">Download it on GitHub</a>.</p>
+<p>Website Monitor is an  <a href="https://github.com/neatnik/website-monitor">open source</a> project inspired by <a href="https://broke.lol">broke.lol</a>.</p>
 
 </footer>
 

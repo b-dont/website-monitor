@@ -1,37 +1,51 @@
 [
     {
-        "timestamp": 1705096334,
-        "time": 130.469,
+        "timestamp": 1705164046,
+        "time": 132.847,
         "response": 200
     },
     {
-        "timestamp": 1705098677,
-        "time": 123.145,
+        "timestamp": 1705164049,
+        "time": 124.733,
         "response": 200
     },
     {
-        "timestamp": 1705098678,
-        "time": 124.094,
+        "timestamp": 1705164050,
+        "time": 125.737,
         "response": 200
     },
     {
-        "timestamp": 1705098679,
-        "time": 126.171,
+        "timestamp": 1705164051,
+        "time": 127.52,
         "response": 200
     },
     {
-        "timestamp": 1705098680,
-        "time": 128.12,
+        "timestamp": 1705164052,
+        "time": 127.209,
         "response": 200
     },
     {
-        "timestamp": 1705098681,
-        "time": 121.243,
+        "timestamp": 1705164053,
+        "time": 132.967,
         "response": 200
     },
     {
-        "timestamp": 1705099948,
-        "time": 128.164,
+        "timestamp": 1705164480,
+        "error": "Failed to connect to brandont.dev port 443 after 120 ms: Couldn't connect to server"
+    },
+    {
+        "timestamp": 1705164523,
+        "time": 126.757,
+        "response": 200
+    },
+    {
+        "timestamp": 1705164524,
+        "time": 124.458,
+        "response": 200
+    },
+    {
+        "timestamp": 1705164525,
+        "time": 129.313,
         "response": 200
     }
 ]

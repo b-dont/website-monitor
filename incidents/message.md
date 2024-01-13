@@ -1,1 +1,1 @@
-There are no active incidents.
+Nothing to see here.
