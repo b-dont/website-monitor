@@ -179,7 +179,7 @@ EOD;
 
 <footer>
 
-<p>Website Monitor is an  <a href="https://github.com/neatnik/website-monitor">open source</a> project inspired by <a href="https://broke.lol">broke.lol</a>.</p>
+<small><p>Website Monitor is an  <a href="https://github.com/neatnik/website-monitor">open source</a> project inspired by <a href="https://broke.lol">broke.lol</a>.</p></small>
 
 </footer>
 
