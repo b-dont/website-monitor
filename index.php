@@ -14,9 +14,7 @@ if(!is_writable(PATH.'/monitors')) die('<h1>Monitors directory is not writable</
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-<?php
-echo '<title>'.$_ENV['TITLE'].'</title>';
-?>
+<title>status.brandont.dev</title>
 <meta charset="utf-8">
 <meta name="theme-color" content="#212529">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,9 +25,7 @@ echo '<title>'.$_ENV['TITLE'].'</title>';
 
 <main>
 
-<?php
-echo '<h1>'.$_ENV['TITLE'].'</h1>';
-?>
+<h1>status.brandont.dev</h1>
 
 <?php
 
