@@ -21,8 +21,6 @@ run name port: (build name)
 stop name:
 	podman stop webmonitor-{{name}}
 
-kill name: (stop name)(prune)
-
 # prune all hanging images, containers, and volumes
 prune:
 	podman image prune -f
@@ -34,6 +32,8 @@ prune:
 rm name:
 	podman rmi webmonitor:{{name}}
 
+kill name: (stop name)(rm name)(prune)
+
 # follow the container's logs
 logs name:
-	tail -f | podman logs webmonitor:{{name}}
+	tail -f | podman logs webmonitor-{{name}}

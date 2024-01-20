@@ -1,8 +1,4 @@
-FROM alpine
+FROM php:apache
 
-WORKDIR /
-COPY . .
-
-RUN apk update && apk add php busybox openrc nginx --no-cache && crontab cron
-
-RUN ["crond", "-d", "8"]
+COPY website-monitor /var/www/website-monitor
+COPY status.brandont.dev /etc/apache2/sites-enabled/status.brandont.dev.conf
