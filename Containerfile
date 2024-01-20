@@ -1,11 +1,8 @@
-FROM ghcr.io/static-web-server/static-web-server:2-alpine as server
+FROM alpine
 
 WORKDIR /
-
 COPY . .
 
-RUN apk update && apk add php busybox openrc --no-cache
-
-RUN crontab cron
+RUN apk update && apk add php busybox openrc nginx --no-cache && crontab cron
 
 RUN ["crond", "-d", "8"]
