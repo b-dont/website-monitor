@@ -14,7 +14,7 @@ run name port: (build name)
 		-it \
 		-d \
 		--name webmonitor-{{name}} \
-		-p {{port}}:80 webmonitor:{{name}}
+		-p {{port}}:9000 webmonitor:{{name}}
 	podman image prune -f
 
 # stop the latest container
