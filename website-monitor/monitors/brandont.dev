@@ -1,42 +1,7 @@
 [
     {
-        "timestamp": 1705183430,
-        "time": 120.924,
-        "response": 200
-    },
-    {
-        "timestamp": 1705183489,
-        "time": 125.304,
-        "response": 200
-    },
-    {
-        "timestamp": 1705183531,
-        "time": 122.742,
-        "response": 200
-    },
-    {
-        "timestamp": 1705183566,
-        "time": 123.228,
-        "response": 200
-    },
-    {
-        "timestamp": 1705183569,
-        "time": 124.291,
-        "response": 200
-    },
-    {
-        "timestamp": 1705183570,
-        "time": 124.843,
-        "response": 200
-    },
-    {
-        "timestamp": 1705183571,
-        "time": 127.398,
-        "response": 200
-    },
-    {
-        "timestamp": 1705183572,
-        "time": 124.015,
+        "timestamp": 1706065185,
+        "time": 87.266,
         "response": 200
     }
 ]
