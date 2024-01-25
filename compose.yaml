@@ -1,0 +1,36 @@
+services:
+
+  caddy:
+    env_file: .env
+    container_name: caddy-proxy
+    build:
+      dockerfile: config/caddy.Containerfile
+    ports:
+      - "${HTTP_PORT}"
+      - "${HTTPS_PORT}"
+    volumes:
+      - ./config/Caddyfile:/etc/caddy/Caddyfile:Z
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - proxy-net
+
+  web-monitor:
+    env_file: .env
+    container_name: web-monitor
+    depends_on:
+      - caddy
+    build:
+      dockerfile: config/server.Containerfile
+    ports:
+      - "${HTTP_PORT}"
+      - "${HTTPS_PORT}"
+    networks:
+      - proxy-net
+
+volumes:
+  caddy_data:
+  caddy_config:
+
+networks:
+  proxy-net:
