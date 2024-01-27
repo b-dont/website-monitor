@@ -3,13 +3,12 @@ services:
   caddy:
     env_file: .env
     container_name: caddy-proxy
-    build:
-      dockerfile: config/caddy.Containerfile
+    image: caddy:latest
     ports:
-      - "${HTTP_PORT}"
-      - "${HTTPS_PORT}"
+      - "8000:8000"
+      - "8787:443"
     volumes:
-      - ./config/Caddyfile:/etc/caddy/Caddyfile:Z
+      - ./Caddyfile:/etc/caddy/Caddyfile:Z
       - caddy_data:/data
       - caddy_config:/config
     networks:
@@ -21,10 +20,9 @@ services:
     depends_on:
       - caddy
     build:
-      dockerfile: config/server.Containerfile
+      dockerfile: Containerfile
     ports:
-      - "${HTTP_PORT}"
-      - "${HTTPS_PORT}"
+      - "9000:9000"
     networks:
       - proxy-net
 
