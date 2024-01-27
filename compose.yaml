@@ -2,7 +2,6 @@ services:
 
   caddy:
     env_file: .env
-    container_name: caddy-proxy
     image: caddy:latest
     ports:
       - "8000:8000"
@@ -16,7 +15,6 @@ services:
 
   web-monitor:
     env_file: .env
-    container_name: web-monitor
     depends_on:
       - caddy
     build:

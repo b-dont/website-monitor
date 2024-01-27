@@ -1,3 +1,3 @@
-localhost:8000 {
-	php_fastcgi http://webmonitor-dev:9000
+localhost:8787 {
+	php_fastcgi https://webmonitor-dev:9000
 }
