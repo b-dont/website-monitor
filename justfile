@@ -1,6 +1,10 @@
 set positional-arguments
 set ignore-comments
 
+# Run compose
+up:
+	podman compose up --build
+
 # build an image
 build name:
 	podman build \
