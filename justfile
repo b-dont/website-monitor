@@ -5,6 +5,13 @@ set ignore-comments
 up:
 	podman compose up --build
 
+down:
+	podman compose down
+	podman image prune -f
+	podman container prune -f
+	podman volume prune -f
+	podman network prune -f
+
 # build an image
 build name:
 	podman build \
@@ -19,7 +26,6 @@ run name port: (build name)
 		-d \
 		--name webmonitor-{{name}} \
 		-p {{port}}:9000 webmonitor:{{name}}
-	podman image prune -f
 
 # stop the latest container
 stop name:
