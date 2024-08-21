@@ -6,21 +6,20 @@ services:
     build:
       dockerfile: Containerfile
     volumes:
-      - ./website-monitor:/var/www/website-monitor
+      - type: bind
+        source: ./website-monitor
+        target: /var/www/website-monitor
 
   web-monitor:
+    container_name: web-monitor
     image: php:8.2-fpm
     command: php -S 0.0.0.0:9000 -f ./monitor.php
     working_dir: /var/www/website-monitor
     depends_on:
       - monitor-cron
     volumes:
-      - ./website-monitor:/var/www/website-monitor
+      - type: bind
+        source: ./website-monitor
+        target: /var/www/website-monitor
     ports:
       - "9000:9000"
-
-volumes:
-  web_monitor_data:
-
-networks:
-  proxy-net:
