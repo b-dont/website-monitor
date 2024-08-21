@@ -1,1 +1,2 @@
-* * * * * /usr/bin/php -f /var/www/website-monitor/monitor.php > /dev/null 2>&1
+* * * * * root /usr/bin/php -f /var/www/website-monitor/monitor.php > /dev/null 2>&1
+

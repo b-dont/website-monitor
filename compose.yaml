@@ -1,25 +1,32 @@
 services:
 
-  monitor-cron:
-    container_name: monitor-cron
-    working_dir: /var/www/website-monitor
+  cron:
+    container_name: cron
     build:
-      dockerfile: Containerfile
+      context: .
+      dockerfile: ./config/cron.Containerfile
     volumes:
-      - type: bind
-        source: ./website-monitor
-        target: /var/www/website-monitor
-
-  web-monitor:
-    container_name: web-monitor
-    image: php:8.2-fpm
-    command: php -S 0.0.0.0:9000 -f ./monitor.php
+      - type: volume
+        source: data
+        target: /var/www/website-monitor/monitors
     working_dir: /var/www/website-monitor
+    command: cron -f
+
+  app:
+    container_name: app
     depends_on:
-      - monitor-cron
+      - cron
+    build:
+      context: .
+      dockerfile: ./config/monitor.Containerfile
     volumes:
-      - type: bind
-        source: ./website-monitor
-        target: /var/www/website-monitor
+      - type: volume
+        source: data
+        target: /var/www/website-monitor/monitors
     ports:
       - "9000:9000"
+    working_dir: /var/www/website-monitor
+    command: php -S 0.0.0.0:9000 -f ./monitor.php
+
+volumes:
+  data:
