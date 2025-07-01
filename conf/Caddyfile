@@ -1,0 +1,10 @@
+{
+	# Staging acme_ca
+	# acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+	# Production acme_ca
+	# acme_ca https://acme-v02.api.letsencrypt.org/directory
+}
+
+http://localhost:80 {
+	reverse_proxy http://website-monitor:9000
+}

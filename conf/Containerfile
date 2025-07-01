@@ -1,0 +1,10 @@
+FROM alpine:latest
+
+RUN apk add --update php
+
+RUN touch crontab.tmp \
+&& echo '* * * * * root /usr/bin/php -f /var/www/website-monitor/monitor.php > /dev/null 2>&1' > crontab.tmp \
+&& crontab crontab.tmp \
+&& rm -rf crontab.tmp
+
+CMD ["/usr/sbin/crond", "-f", "-d", "0"]
