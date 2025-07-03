@@ -14,7 +14,7 @@ if(!is_writable(PATH.'/monitors')) die('<h1>Monitors directory is not writable</
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-<title>status.brandont.dev</title>
+<title>Website Monitor</title>
 <meta charset="utf-8">
 <meta name="theme-color" content="#212529">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,7 @@ if(!is_writable(PATH.'/monitors')) die('<h1>Monitors directory is not writable</
 
 <main>
 
-<h1>status.brandont.dev</h1>
+<h1>Website Monitor</h1>
 
 <?php
 
@@ -175,7 +175,7 @@ EOD;
 
 <footer>
 
-<small><p>Website Monitor is an  <a href="https://github.com/neatnik/website-monitor">open source</a> project inspired by <a href="https://broke.lol">broke.lol</a>.</p></small>
+<p>Website Monitor is an open source project by <a href="https://neatnik.net/">Neatnik</a>. <a href="https://neatnik.net/dispenser/?project=website-monitor">Download it here</a>.</p>
 
 </footer>
 

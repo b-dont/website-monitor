@@ -16,8 +16,7 @@ services:
       context: .
       dockerfile: ./conf/Containerfile
     volumes:
-      - ./website-monitor:/var/www/website-monitor
-    working_dir: /var/www/website-monitor
+      - ./website-monitor:/website-monitor
 
   app:
     image: php:8.2-fpm
@@ -26,8 +25,10 @@ services:
       - caddy
       - cron
     volumes:
-      - ./website-monitor:/var/www/website-monitor
-    working_dir: /var/www/website-monitor
+      - ./website-monitor:/website-monitor
+    working_dir: /website-monitor
+    ports:
+      - "9000:9000"
     command: php -S localhost:9000 -f ./monitor.php
 
 volumes:

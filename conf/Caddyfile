@@ -6,5 +6,5 @@
 }
 
 http://localhost:80 {
-	reverse_proxy http://website-monitor:9000
+	php_fastcgi http://website-monitor:9000
 }
