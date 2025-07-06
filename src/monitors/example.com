@@ -1,19 +1,20 @@
 [
     {
-<<<<<<< HEAD:src/monitors/btp.dev
-        "timestamp": 1705649881,
-        "time": 4.325,
+        "timestamp": 1671749821,
+        "time": 4.192,
         "response": 200
     },
     {
-        "timestamp": 1751766929,
-        "time": 67.123,
+        "timestamp": 1671749881,
+        "time": 6.308,
         "response": 200
     },
     {
-        "timestamp": 1751766933,
-        "time": 60.954,
-=======
+        "timestamp": 1671749941,
+        "time": 4.439,
+        "response": 200
+    },
+    {
         "timestamp": 1671750002,
         "time": 4.309,
         "response": 200
@@ -296,22 +297,6 @@
     {
         "timestamp": 1671753361,
         "time": 7.862,
-        "response": 200
-    },
-    {
-        "timestamp": 1751513089,
-        "time": 65.62,
-        "response": 200
-    },
-    {
-        "timestamp": 1751513097,
-        "time": 57.197,
-        "response": 200
-    },
-    {
-        "timestamp": 1751513137,
-        "time": 63.543,
->>>>>>> a14b9b075f02fe5978119e030965e601fdda06c1:website-monitor/monitors/btp.dev
         "response": 200
     }
 ]
