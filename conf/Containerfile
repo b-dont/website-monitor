@@ -1,0 +1,5 @@
+FROM php:8.4.8-apache
+
+WORKDIR /var/www/html
+
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"

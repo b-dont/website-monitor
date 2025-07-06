@@ -1,0 +1,17 @@
+[
+    {
+        "timestamp": 1705649881,
+        "time": 4.325,
+        "response": 200
+    },
+    {
+        "timestamp": 1751766929,
+        "time": 67.123,
+        "response": 200
+    },
+    {
+        "timestamp": 1751766933,
+        "time": 60.954,
+        "response": 200
+    }
+]
