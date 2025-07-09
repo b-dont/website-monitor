@@ -25,7 +25,7 @@ if(!is_writable(PATH.'/monitors')) die('<h1>Monitors directory is not writable</
 
 <main>
 
-<h1>Website Monitor</h1>
+<h1>Brandon's Website Monitor</h1>
 
 <?php
 
