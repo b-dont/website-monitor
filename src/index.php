@@ -20,6 +20,7 @@ if(!is_writable(PATH.'/monitors')) die('<h1>Monitors directory is not writable</
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="style.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.2/dist/chart.min.js" crossorigin="anonymous"></script>
+<script defer data-domain="status.btp.dev" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
 
