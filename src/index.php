@@ -14,7 +14,7 @@ if(!is_writable(PATH.'/monitors')) die('<h1>Monitors directory is not writable</
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Website Monitor</title>
+<title>Brandon's Website Monitor</title>
 <meta charset="utf-8">
 <meta name="theme-color" content="#212529">
 <meta name="viewport" content="width=device-width, initial-scale=1">
