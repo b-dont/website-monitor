@@ -1,18 +1,8 @@
-<<<<<<< HEAD
 FROM php:8.4.8-apache
 
 WORKDIR /var/www/html
 
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
-=======
-FROM alpine:latest
-
-RUN apk add --update php
-
-RUN touch crontab.tmp \
-&& echo '* * * * * root /usr/bin/php -f /website-monitor/monitor.php > /dev/null 2>&1' > crontab.tmp \
-&& crontab crontab.tmp \
-&& rm -rf crontab.tmp
-
-CMD ["/usr/sbin/crond", "-f", "-d", "0"]
->>>>>>> a14b9b075f02fe5978119e030965e601fdda06c1
+RUN chown -R www-data:www-data /var/www/html
+RUN find /var/www/html -type d -exec chmod 775 {} \;
+RUN find /var/www/html -type f -exec chmod 664 {} \;
